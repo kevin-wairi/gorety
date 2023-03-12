@@ -13,9 +13,9 @@ header{
 
 }
 header #nameLogo{
-    color: white;
+    color: white;   
     height: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 20px;
     background-color: red;
     border-radius: 5px;
@@ -60,4 +60,20 @@ section{
 .right h3{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
+}
+
+/* footer section */
+footer{
+    background-color:#151823;
+    display: flex;
+    width: auto;
+    color: white;
+}
+footer div{
+    /* border:1px solid; */
+    padding-left: 20px;
+}
+footer li{
+    list-style-type: none;
+    line-height: 30px;
 }
