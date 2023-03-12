@@ -1,19 +1,24 @@
-body{
+
+body,h1,h2,h3{
     margin: 0;
     padding: o;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+/* header styles */
 header{
     height: 80px;
     display: flex;
     background-color: black;
-    justify-content:space-around;
+    justify-content:space-between;
 
 }
-header h1{
+header #nameLogo{
     color: white;
-    margin-right: auto;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
     background-color: red;
-    border-radius: 40px;
+    border-radius: 5px;
 }
 header ul li{
     list-style-type: none;
@@ -23,4 +28,36 @@ header ul li{
 header ul li a{
     text-decoration: none;
     color: white;
+}
+/* begining of section */
+section{
+    height: 400px;
+    border: solid 1px black;
+    margin: 0;
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+    height: 350px;
+    /* width: 5oopx;    */
+}
+.left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+ .left, .right{
+    width: 500px;
+    height: 350px;
+    padding-left: 20px;
+}
+.right h1{
+    font-size: 40px;
+    padding-top: 20px;
+}
+.right h3{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
 }
