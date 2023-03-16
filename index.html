@@ -7,33 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betting Site</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
     <body>
         <div class="container">
+            
         <header>
             <h1 id="nameLogo">Gorety</h1>
             <ul><li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li></ul>
+            <li><a href="contact.html">Contact Us</a></li>
+             <li><select name="" id="dropDown" onchange="changeColor(this.value)">
+                <option value="">Select</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+                <option value="pink">Pink</option>
+                <option value="black">Black</option> 
+            </select></li> 
+            <li onClick="clicked()"><img  src="./images/half-moon.png" id="switch" alt=""></li>
+        </ul>
         </header>
-        <section>
+        <section class="main-content" >
+            
             <div class="cards">
                 <div class="left"><img src="./images/true.png" alt="true goals"></div>
-                <div class="right">
+                <div class="right" id="changeColor">
                     <h1>The strength within</h1>
                     <h3>UNLEASH YOUR INNER BEAST</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Asperiores beatae corporis debitis dicta dolorem ea eveniet exercitationem id modi neque nulla, perspiciatis quam quibusdam quisquam, ratione rerum sint ut vitae</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Asperiores beatae corporis debitis dicta dolorem ea eveniet exercitationem id modi neque nulla, perspiciatis quam quibusdam quisquam, ratione rerum sint ut vitae</p>
                 </div>
             </div>
-            <select name="" id=""><option value="">Select</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="red">Red</option>
-            <option value="pink">Pink</option>
-            <option value="black">Black</option></select>
         </section>
         <footer>
                 <div style="flex-grow: 4">
@@ -62,7 +66,7 @@
                     <li>Afilliates</li>
                     <li>Sitemap</li></ul>
                 </div>
-                <link rel="stylesheet" href="">
+                <script src="./js/javascript.js"></script>
             </div>
         </footer>
     </div>
